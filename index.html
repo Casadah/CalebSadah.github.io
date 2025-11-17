@@ -1,161 +1,159 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Caleb Data Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caleb Sadah - Data Science & Analytics Professional</title>
+  <meta name="description" content="Portfolio of Caleb Sadah, Data Science & Analytics Professional. Python, Power BI, SQL, Machine Learning projects for remote work, freelance, and NGO collaborations.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', sans-serif; }
+    body { background-color:#0D0F12; color:#FFFFFF; line-height:1.6; }
+    a { text-decoration:none; color:inherit; }
+    img { max-width:100%; border-radius:0.5rem; }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    /* Navbar */
+    nav { position:fixed; width:100%; top:0; left:0; background:#0D0F12; border-bottom:1px solid #333; display:flex; justify-content:space-between; align-items:center; padding:1rem 3rem; z-index:100; }
+    nav a:hover { color:#4F8BFF; transition:0.3s; }
+    nav .logo { font-weight:700; font-size:1.5rem; }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Caleb Sadah<br />
-						Data Portfolio</h1>
-						<p>Data Analyst and Scientist skilled in Python, Power BI, MS Excel, SQL
-							<a href="https://www.linkedin.com/in/sadahcaleb">@CalebSadah</a></p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    /* Sections */
+    section { padding:100px 3rem; max-width:1200px; margin:0 auto; }
+    h1,h2,h3 { margin-bottom:1rem; }
+    h1 { font-size:3rem; }
+    h2 { font-size:2.5rem; }
+    h3 { font-size:1.5rem; }
+    p { color:#C9D1D9; margin-bottom:1rem; }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Caleb the Analyst</a>
-					</header>
+    /* Hero */
+    .hero { text-align:center; animation:fadeInUp 1s ease forwards; }
+    .btn { padding:0.75rem 1.5rem; border-radius:0.5rem; font-weight:600; cursor:pointer; margin:0.5rem; display:inline-block; transition:0.3s; }
+    .btn-primary { background:#4F8BFF; color:#fff; }
+    .btn-primary:hover { background:#3f73d1; }
+    .btn-outline { border:2px solid #4F8BFF; color:#4F8BFF; background:transparent; }
+    .btn-outline:hover { background:#4F8BFF; color:#000; }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							
-						</ul>
-						<ul class="icons">
-							
-							<li><a href="https://www.linkedin.com/in/sadahcaleb/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/Casadah" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+    /* About */
+    .about { display:flex; flex-wrap:wrap; gap:2rem; align-items:center; animation:fadeIn 1s ease forwards; }
+    .about-text { flex:1 1 400px; }
+    .about-img { flex:1 1 300px; text-align:center; }
 
-				<!-- Main -->
-					<div id="main">
+    /* Projects */
+    .projects { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:2rem; }
+    .project-card { background:#161A20; padding:1rem; border-radius:1rem; border:1px solid #333; transition:0.3s; }
+    .project-card:hover { border-color:#4F8BFF; transform:translateY(-5px); }
+    .project-card img { margin-bottom:0.5rem; }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://app.powerbi.com/links/_xtsRge87u?ctid=900e4569-a38e-4cfb-a64f-5aa275e302a9&pbi_source=linkShare&bookmarkGuid=c0f9b141-d050-4978-99ba-258b5d26fc2b">Dashboard in<br />
-									Power BI</a></h2>
-									<p>In this project we connected, cleaned, analysed and built an interactive Dashboard for a retailer
-										to track revenue, profit, customer, product, store performance.</p>
-								</header>
-								<a href="https://app.powerbi.com/links/_xtsRge87u?ctid=900e4569-a38e-4cfb-a64f-5aa275e302a9&pbi_source=linkShare&bookmarkGuid=c0f9b141-d050-4978-99ba-258b5d26fc2b" class="image main"><img src="images/sales.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://app.powerbi.com/links/_xtsRge87u?ctid=900e4569-a38e-4cfb-a64f-5aa275e302a9&pbi_source=linkShare&bookmarkGuid=c0f9b141-d050-4978-99ba-258b5d26fc2b" class="button large">View Project</a></li>
-								</ul>
-							</article>
+    /* Contact */
+    .contact { text-align:center; animation:fadeInUp 1s ease forwards; }
+    .contact a { display:inline-block; margin:0.5rem; color:#4F8BFF; transition:0.3s; }
+    .contact a:hover { text-decoration:underline; }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Casadah/Data-Projects/blob/main/Detecting%20Fake%20News.ipynb">Fake News Detection<br />
-										using NLP with Python</a></h2>
-									</header>
-									<a href="https://github.com/Casadah/Data-Projects/blob/main/Detecting%20Fake%20News.ipynb" class="image fit"><img src="images/fake_news.jpg" alt="" /></a>
-									<p>In this project, we analyzed news data from multiple sources and developed a machine learning model using Natural Language Processing (NLP) to detect fake news.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Casadah/Data-Projects/blob/main/Detecting%20Fake%20News.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Casadah/Data-Projects/blob/main/Employee%20Burnout.ipynb">Machine Learning Model<br />
-										with Python and Streamlit App</a></h2>
-									</header>
-									<a href="https://github.com/Casadah/Data-Projects/blob/main/Employee%20Burnout.ipynb" class="image fit"><img src="images/burn_out.jpg" alt="" /></a>
-									<p>The Employee Burnout dataset was cleaned and analyzed to build a predictive model, which was then deployed as an interactive Streamlit app.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Casadah/Data-Projects/blob/main/Employee%20Burnout.ipynb" class="button">View Project</a></li>
-										<li><a href="https://employeeburnrate.streamlit.app/" class="button">Open App</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Casadah/Data-Projects/blob/main/Online%20Store%20Web%20Scrapping.ipynb">Web Scraping<br />
-										in Python</a></h2>
-									</header>
-									<a href="https://github.com/Casadah/Data-Projects/blob/main/Online%20Store%20Web%20Scrapping.ipynb" class="image fit"><img src="images/jumia.jpg" alt="" /></a>
-									<p>In this project, we scraped data from an online store’s web page, extracted and saved it into a CSV file, and automated the data extraction process to run at regular time intervals.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Casadah/Data-Projects/blob/main/Online%20Store%20Web%20Scrapping.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										
-										<h2><a href="https://github.com/Casadah/Data-Projects/blob/main/Water%2C%20Sanitation%20and%20Hygiene.ipynb">WASH Data Analysis<br />
-										in Python</a></h2>
-									</header>
-									<a href="https://github.com/Casadah/Data-Projects/blob/main/Water%2C%20Sanitation%20and%20Hygiene.ipynb" class="image fit"><img src="images/wash.jpg" alt="" /></a>
-									<p>In this project, we analyzed global WASH data on water usage to extract insights on trends in access to safe water and its distribution across countries, contributing to the assessment of progress toward the SDG 6 goal.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Casadah/Data-Projects/blob/main/Water%2C%20Sanitation%20and%20Hygiene.ipynb" class="button">View Project</a></li>
-									</ul>
-								</article>
+    /* Footer */
+    footer { text-align:center; padding:2rem 0; border-top:1px solid #333; color:#8B949E; }
 
+    /* Animations */
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-						<section class="contact-info">
-							<div class="row">
-								<h3>Address</h3>
-								<p>FCT Abuja, Nigeria.</p>
-							</div>
-							<section class="row">
-								<h3>Phone</h3>
-								<p><a href="tel:+23481008809299">(234) 810-08809299</a></p>
-							</section>
-							<section class="row">
-								<h3>Email</h3>
-								<p><a href="mailto:sadahcaleb@gmail.com">sadahcaleb@gmail.com</a></p>
-							</section>
-							<section class="row"><br />
-								<br /><h3>Social</h3>
-								<ul class="icons alt">
-									
-									<li><a href="https://www.linkedin.com/in/sadahcaleb/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/Casadah" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    /* Responsive */
+    @media(max-width:768px){ .about{flex-direction:column;} nav{flex-direction:column;gap:1rem;} }
+  </style>
+</head>
+<body>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Caleb Sadah</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-			</div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Data Science & Analytics Professional</h1>
+    <p>I help organisations turn data into clear insights, efficient decisions, and measurable impact using Python, Power BI, SQL, and machine learning.</p>
+    <a href="#projects" class="btn btn-primary">View Projects</a>
+    <a href="https://drive.google.com/file/d/1N5ksjfytYbfL3JFl0l9QKKsAPDjiI3WH/view?usp=sharing" class="btn btn-outline">Download CV</a>
+  </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I am a Data Science & Analytics Professional with experience using data to solve real-world challenges across business, social impact, and technology. My work spans data cleaning, EDA, dashboard development, machine learning, NLP, and automation.</p>
+      <p>I am open to remote roles, freelance projects, NGO assignments, and collaborations that leverage data to create impact.</p>
+    </div>
+    <div class="about-img">
+      <img src="images/passport.jpg" alt="Caleb Sadah">
+    </div>
+  </section>
 
-	</body>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <a href="https://app.powerbi.com/groups/me/reports/a3317dfb-8d56-4c12-9520-8362e34c386b/c29fe40a74d1bc14641b?experience=power-bi" target="_blank">
+          <img src="images/sales.jpg" alt="Retail Dashboard">
+          <h3>Retail Performance Dashboard (Power BI)</h3>
+          <p>Interactive dashboard for tracking revenue, profit, customer segments, and store KPIs.</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/Casadah/Data-Projects/blob/main/Detecting%20Fake%20News.ipynb" target="_blank">
+          <img src="images/fake_news.jpg" alt="Fake News Detection">
+          <h3>Fake News Detection (Python + NLP)</h3>
+          <p>Machine learning classifier using text preprocessing, TF-IDF, and model evaluation.</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/Casadah/Data-Projects/blob/main/Employee%20Burnout.ipynb" target="_blank">
+          <img src="images/burn_out.jpg" alt="Burnout Prediction App">
+          <h3>Employee Burnout Prediction + Streamlit App</h3>
+          <p>ML model to predict burnout and deployed as a Streamlit web application.</p>
+		  <a href="https://github.com/Casadah/Data-Projects/blob/main/Employee%20Burnout.ipynb" target="_blank" class="btn btn-outline">View Code</a>
+          <a href="https://employeeburnrate.streamlit.app/" target="_blank" class="btn btn-primary">Open App</a>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/Casadah/Data-Projects/blob/main/Online%20Store%20Web%20Scrapping.ipynb" target="_blank">
+          <img src="images/jumia.jpg" alt="Web Scraper">
+          <h3>Automated Web Scraper (Python)</h3>
+          <p>Scraped and structured e-commerce product data with automation support.</p>
+        </a>
+      </div>
+      <div class="project-card">
+        <a href="https://github.com/Casadah/Data-Projects/blob/main/Water%2C%20Sanitation%20and%20Hygiene.ipynb" target="_blank">
+          <img src="images/wash.jpg" alt="WASH Data Analysis">
+          <h3>Global WASH (SDG 6) Data Analysis</h3>
+          <p>Analyzed global water, sanitation & hygiene datasets to extract insights.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let’s work together.</p>
+    <p>📧 <a href="mailto:sadahcaleb@gmail.com">sadahcaleb@gmail.com</a></p>
+    <p>📍 Abuja, Nigeria</p>
+    <div>
+      <a href="https://github.com/Casadah/Data-Projects/tree/main">GitHub</a>
+      <a href="https://www.linkedin.com/in/sadahcaleb/">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Caleb Sadah. All rights reserved.
+  </footer>
+
+</body>
 </html>
